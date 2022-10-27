@@ -1,0 +1,44 @@
+.booking {
+  padding: 44px 40px 50px 40px;
+}
+
+.titleHeading {
+  color: rgb(216, 213, 207);
+  margin-top: 45px;
+}
+
+.checkData {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.formWrapper {
+  width: 80%;
+  margin: 0 auto 45px;
+}
+
+@media screen and (min-width: 992px) {
+  .formWrapper {
+    width: 70%;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  .formWrapper {
+    width: 90%;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  .booking {
+    padding: 20px
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .booking {
+    padding: 50px 30px;
+  }
+}
