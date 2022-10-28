@@ -7,6 +7,15 @@ interface ServicesProps {
     servicesHeadline: string
 }
 
+const brief = [
+    "Travel Plan",
+    "Catering Service",
+    "Babysitting",
+    "Laundry",
+    "Hire Driver",
+    "Bar & Drink"
+]
+
 const Services: FC<ServicesProps> = ({ servicesHeadline }) => {
     return (
         <div className={styles.servicesContainer}>
@@ -15,48 +24,19 @@ const Services: FC<ServicesProps> = ({ servicesHeadline }) => {
                 <h2 className={styles.servicesHeadline}> { servicesHeadline } </h2>
             </div>
             <div className={styles.servicesManyContainer}>
-                <BriefDescription
-                    briefHeadline="Travel Plan"
-                    briefPar="Lorem ipsum dolor sit amet,
+                {brief.map((component, index) => {
+                    return (
+                        <BriefDescription
+                            // cause no ID
+                            key={index}
+                            briefHeadline={component}
+                            briefPar="Lorem ipsum dolor sit amet,
                             consectetur adipisicing elit,
                             sed do eiusmod tempor incididunt ut
                             labore et dolore magna."
-                />
-                <BriefDescription
-                    briefHeadline="Catering Service"
-                    briefPar="Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut
-                            labore et dolore magna."
-                />
-                <BriefDescription
-                    briefHeadline="Babysitting"
-                    briefPar="Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut
-                            labore et dolore magna."
-                />
-                <BriefDescription
-                    briefHeadline="Laundry"
-                    briefPar="Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut
-                            labore et dolore magna."
-                />
-                <BriefDescription
-                    briefHeadline="Hire Driver"
-                    briefPar="Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut
-                            labore et dolore magna."
-                />
-                <BriefDescription
-                    briefHeadline="Bar & Drink"
-                    briefPar="Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut
-                            labore et dolore magna."
-                />
+                        />
+                    )
+                })}
             </div>
         </div>
     );

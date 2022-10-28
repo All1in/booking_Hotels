@@ -1,0 +1,17 @@
+{
+  "name": "server-part",
+  "version": "1.0.0",
+  "description": "Server part of an online booking app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.0",
+    "nodemon": "^2.0.20"
+  }
+}

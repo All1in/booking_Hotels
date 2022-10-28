@@ -10,7 +10,7 @@ interface GalleryProps {
 }
 
 const Gallery: FC<GalleryProps> = ({ headline, description}) => {
-    // state to change background
+    /// state to change background
     const [background, setBackground] = useState([
         "https://www.advancetemplate.com/assets/zip/070069c9c3e3addaf305d3ff472958bc/sona/img/hero/hero-3.jpg",
         "https://www.advancetemplate.com/assets/zip/070069c9c3e3addaf305d3ff472958bc/sona/img/hero/hero-2.jpg",
