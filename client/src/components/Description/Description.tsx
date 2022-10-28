@@ -16,10 +16,6 @@ const Description: FC<DescriptionProps> = ({ headline, description}) => {
             >
                 { description }
             </p>
-
-            <UserLink
-                linkCaption="Discover Now"
-            />
         </React.Fragment>
     );
 };

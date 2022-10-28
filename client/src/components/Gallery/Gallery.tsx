@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import UserLink from "../UI/UserLink/UserLink";
 import FormBooking from "../FormBooking/FormBooking";
 import styles from "./Gallery.module.scss"
@@ -16,24 +16,40 @@ const Gallery: FC<GalleryProps> = ({ headline, description}) => {
         "https://www.advancetemplate.com/assets/zip/070069c9c3e3addaf305d3ff472958bc/sona/img/hero/hero-2.jpg",
         "https://www.advancetemplate.com/assets/zip/070069c9c3e3addaf305d3ff472958bc/sona/img/hero/hero-1.jpg"
     ]);
+    /// index of element in massive
+    const [num, setNum] = useState(0);
 
-    /// IN utils folder mb
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setNum(prevNum => {
+                let n = prevNum;
+                if (n === background.length - 1) {
+                    n = 0;
+                } else {
+                    n++;
+                }
+                return n;
+            });
+        }, 3000);
+        return () => {
+            clearInterval(timer);
+        }
+    }, []);
 
-   // const changeBack = (delay: number) => {
-   //     setInterval(() => {
-   //          for (let i = 0; i < background.length; i++) {
-   //              setBackground(background[i])
-   //                  }
-   //      }, delay)
-   //          }
 
     return (
-        <div className={styles.galleryWrapper}>
+        <div
+            style={{backgroundImage: `url(${background[num]})`}}
+            className={styles.galleryWrapper}
+        >
             <div className={styles.sona}>
                 <div className={styles.containerSona}>
                     <Description
                         headline={ headline }
                         description={description}
+                    />
+                    <UserLink
+                        linkCaption="Discover Now"
                     />
                 </div>
                 <div className={styles.formWrapper}>

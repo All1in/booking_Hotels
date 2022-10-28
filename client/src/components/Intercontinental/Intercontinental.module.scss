@@ -1,3 +1,63 @@
 .intercontinental {
-  ///styles
+  text-align: center;
+  padding: 0px 35px;
+  margin-top: 45px;
+}
+
+.imagesContainer {
+  margin-top: 30px;
+}
+
+
+/// Media Query
+
+@media screen and (max-width: 575px){
+  .imagesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 575px){
+  .imagesContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5%;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1600px){
+  .intercontinental {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25%
+  }
+
+  .textContainer {
+    width: 20%;
+  }
+
+  .imagesContainer {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1600px){
+  .intercontinental {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .textContainer {
+    width: 30%;
+  }
+
+  .imagesContainer {
+    width: 50%;
+  }
 }

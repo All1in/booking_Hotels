@@ -1,0 +1,46 @@
+.servicesContainer {
+  max-width: 45%;
+  margin: 0 auto ;
+}
+
+.servicesHeadline {
+  color: rgb(216, 213, 207);
+  font-size: 44px;
+  line-height: 58px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/// Media Query
+
+@media screen and (min-width: 575px) and (max-width: 991px){
+  .servicesManyContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .servicesContainer {
+    max-width: 60%;
+    margin: 0 auto ;
+  }
+}
+
+
+@media screen and (min-width: 991px){
+  .servicesManyContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+  }
+
+  .servicesContainer {
+    max-width: 55%;
+    margin: 0 auto ;
+  }
+}
