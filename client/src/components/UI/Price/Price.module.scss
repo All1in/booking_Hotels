@@ -1,0 +1,19 @@
+.price {
+  color: rgb(223, 169, 116);
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 50px;
+  transition: all 0.2s;
+}
+
+.perNight {
+  color: rgb(232, 230, 227);
+  font-family: "Cabin", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.imagesContainer {
+  display: flex;
+  align-items: center;
+}

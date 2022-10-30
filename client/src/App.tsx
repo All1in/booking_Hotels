@@ -3,6 +3,7 @@ import './styles/App.scss';
 import Gallery from "./components/Gallery/Gallery";
 import Intercontinental from "./components/Intercontinental/Intercontinental";
 import Services from "./components/Services/Services";
+import Proposes from "./components/Proposes/Proposes";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Intercontinental />
 
         <Services servicesHeadline="Discover Our Services" />
+        <Proposes />
     </div>
   );
 }

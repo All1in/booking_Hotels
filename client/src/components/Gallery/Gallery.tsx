@@ -9,15 +9,16 @@ interface GalleryProps {
     description: string
 }
 
+
 const Gallery: FC<GalleryProps> = ({ headline, description}) => {
     /// state to change background
-    const [background, setBackground] = useState([
+    const [background, setBackground] = useState<string[]>([
         "https://www.advancetemplate.com/assets/zip/070069c9c3e3addaf305d3ff472958bc/sona/img/hero/hero-3.jpg",
         "https://www.advancetemplate.com/assets/zip/070069c9c3e3addaf305d3ff472958bc/sona/img/hero/hero-2.jpg",
         "https://www.advancetemplate.com/assets/zip/070069c9c3e3addaf305d3ff472958bc/sona/img/hero/hero-1.jpg"
     ]);
     /// index of element in massive
-    const [num, setNum] = useState(0);
+    const [num, setNum] = useState<number>(0);
 
     useEffect(() => {
         const timer = setInterval(() => {
