@@ -23,7 +23,10 @@ const App = () => {
         <Intercontinental />
 
         <Services servicesHeadline="Discover Our Services" />
+
         <Proposes />
+
+
     </div>
   );
 }

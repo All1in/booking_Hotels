@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import styles from "./CheckInOut.module.scss"
-import "./CheckInOut.responsive.module.scss"
 
 interface CheckInOutProps {
     inputFor: string
@@ -14,7 +13,6 @@ const CheckInOut: FC<CheckInOutProps> = ({ inputFor }) => {
                 type="date"
                 className={styles.dataInput}
             />
-            {/*<i className="icon-calendar"></i>*/}
         </div>
     );
 };

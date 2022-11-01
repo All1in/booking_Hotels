@@ -7,7 +7,7 @@ interface ServicesProps {
     servicesHeadline: string
 }
 
-const brief:  Array<string> = [
+const brief: Array<string> = [
     "Travel Plan",
     "Catering Service",
     "Babysitting",

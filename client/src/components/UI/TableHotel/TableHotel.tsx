@@ -2,7 +2,7 @@ import React from 'react';
 /// no styles yet
 
 interface TableHotel {
-    /// props
+    // props
 }
 
 /// Interfaces
@@ -25,34 +25,47 @@ const forTable: OnlyInterfaceNeeded[] = [
 
 const TableHotel = ({}) => {
     return (
-        <div>
+        <div
+            style={{ marginBottom: "20px" }}
+        >
             <table
                 cellSpacing="0"
                 cellPadding="0"
                 border={0}
             >
-                <tr>
-                    <td>
                         {forTable.map((tableOff) => {
                             const { Size, Capacity, Bed, Services} = tableOff
                                 return (
                                     <table
+                                        // key={}
                                         cellSpacing="3"
                                         border={0}
                                     >
-                                        {/*/// Hyeta*/}
-                                        <tr>
-                                            <th> { Size } </th>
-                                        </tr>
-                                        <tr>
-                                            <th> { Services.join(", ") } </th>
-                                        </tr>
-                                        {/*/// Hyeta*/}
+                                        <tbody>
+                                            {/*/// Hyeta*/}
+                                            <tr>
+                                                {/*<td> { Object.keys(tableOff) } </td>*/}
+                                                {/*<td> { Object.values(tableOff) } </td>*/}
+                                                <td> Size: </td>
+                                                <td> { Size }</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Capacity: </td>
+                                                <td> { Capacity }</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Bed: </td>
+                                                <td> { Bed }</td>
+                                            </tr>
+                                            <tr>
+                                                <td> Services: </td>
+                                                <td> { Services.join(", ") }</td>
+                                            </tr>
+                                            {/*/// Hyeta*/}
+                                        </tbody>
                                     </table>
                                 )
                         })}
-                    </td>
-                </tr>
             </table>
         </div>
     );

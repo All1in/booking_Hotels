@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import styles from "./Proposes.module.scss"
 import MyImage from "../UI/MyImage/MyImage";
+import styles from "./Proposes.module.scss"
 
 interface ProposesProps {
     // props

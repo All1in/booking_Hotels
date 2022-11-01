@@ -1,11 +1,26 @@
 .myImageContainer {
-  background-size: cover;
-  background-repeat: no-repeat;
-  //background-position: top center;
   height: 600px;
-  //padding: 60% 50px 15px 20px;
+  padding: 20px;
 }
+
+@media screen and (min-width: 991px) {
+  .myImageContainer {
+    width: 23%
+  }
+}
+
 
 .myImageContainer:hover {
   /// styles for hover
 }
+
+.hidden {
+  bottom: 0;
+  display: block;
+  position: relative;
+  top: 8%;
+  color: #ffffff;
+  transition-delay: 0.1s;
+  transition-duration: 0.3s;
+}
+
