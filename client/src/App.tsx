@@ -4,6 +4,7 @@ import Gallery from "./components/Gallery/Gallery";
 import Intercontinental from "./components/Intercontinental/Intercontinental";
 import Services from "./components/Services/Services";
 import Proposes from "./components/Proposes/Proposes";
+import Slider from "./components/Slider/Slider";
 
 const App = () => {
   return (
@@ -26,7 +27,7 @@ const App = () => {
 
         <Proposes />
 
-
+        <Slider />
     </div>
   );
 }

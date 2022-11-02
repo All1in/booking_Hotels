@@ -24,5 +24,5 @@ export default function useHover(ref: any) {
         };
     }, [])
 
-    return isHovering;
+    return { isHovering, setHovering };
 };
