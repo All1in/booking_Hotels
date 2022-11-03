@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import styles from "./SlideDescription.module.scss"
-import useHover from "../../../hooks/useHover";
-import {useSlider} from "../../../hooks/useSlider";
+// import { useSlider } from "../../../hooks/useSlider";
 
 interface SlideDescriptionProps {
     // props

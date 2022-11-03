@@ -5,6 +5,7 @@ import Intercontinental from "./components/Intercontinental/Intercontinental";
 import Services from "./components/Services/Services";
 import Proposes from "./components/Proposes/Proposes";
 import Slider from "./components/Slider/Slider";
+import TravelTrip from "./components/TravelTrip/TravelTrip";
 
 const App = () => {
   return (
@@ -27,7 +28,10 @@ const App = () => {
 
         <Proposes />
 
-        <Slider />
+        {/*need to be refactored*/}
+        {/*<Slider />*/}
+
+        <TravelTrip />
     </div>
   );
 }

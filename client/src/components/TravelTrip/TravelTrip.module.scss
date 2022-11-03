@@ -1,5 +1,5 @@
 .travelTripContainer {
-
+  // styles
 }
 
 .heading {
@@ -7,4 +7,48 @@
   font-size: 44px;
   line-height: 58px;
   margin-top: 10px;
+  text-align: center;
+}
+
+// Media Query
+@media screen and (min-width: 991px) {
+  .gridGallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .gridGallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 555px) and (max-width: 768px) {
+  .gridGallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .gridGallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+  }
 }

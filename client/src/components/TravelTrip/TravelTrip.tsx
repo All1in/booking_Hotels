@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
-import styles from "./TravelTrip.module.scss"
-import BackButton from "../UI/BackButton/BackButton";
+// import BackButton from "../UI/BackButton/BackButton";
 import Heading from "../UI/Heading/Heading";
+import styles from "./TravelTrip.module.scss"
+import BlogCard from "../UI/BlogCard/BlogCard";
 
 interface TravelTripProps {
     // props
@@ -62,11 +63,20 @@ const TravelTrip: FC<TravelTripProps> = () => {
         <div className={styles.travelTripContainer}>
             <Heading readerHeadline="Hotel News" />
             <h2 className={styles.heading}> Our Blog & Event </h2>
-            { imagesForTours.map(image => {
-                return (
-
-                )
-            })}
+            <div className={styles.gridGallery}>
+                { imagesForTours.map(image => {
+                    const { id, textForButton, description, date, src } = image
+                    return (
+                        <BlogCard
+                            key={id}
+                            text={textForButton}
+                            description={description}
+                            date={date}
+                            img={src}
+                        />
+                    )
+                })}
+            </div>
         </div>
     );
 };

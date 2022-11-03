@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 
 // troubles with typization
-export default function useHover(ref: any) {
+export const useHover = (ref: any) => {
     const [isHovering, setHovering] = useState<boolean>(false);
 
     const on = () => setHovering(true);
