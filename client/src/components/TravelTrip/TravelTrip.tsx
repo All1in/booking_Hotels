@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 // import BackButton from "../UI/BackButton/BackButton";
 import Heading from "../UI/Heading/Heading";
-import styles from "./TravelTrip.module.scss"
 import BlogCard from "../UI/BlogCard/BlogCard";
+import styles from "./TravelTrip.module.scss"
 
 interface TravelTripProps {
     // props
